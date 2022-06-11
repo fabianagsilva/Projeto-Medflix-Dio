@@ -6,42 +6,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <title>MEDFLIX</title>
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>CLONE NETFLIX</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">MEDFLIX</h2>
-            <nav>
-                <a href="#">Início"</a>
-                <a href="#">Séries"</a>
-                <a href="#">Filmes"</a>
-                <a href="#">Documentários"</a>
+            <a class="logo">MEDFLIX</a>
+            <nav id="nav">
+                <ul id="menu">
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#filmes">Filmes</a></li>
+                    <li><a href="#documentarios">Documentários</a></li>
+                    <li><a href="#minha-lista">Minha lista</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-
     <main>
-        <div class="filme-principal">
-            <div class="containre">
-                <h3 class="titulo">GREY'S ANATOMY</h3>
-                <p class="descricao">Os médicos do Grey Sloan Memorial Hospital lidam diariamente com casos e
-                    consequências de vida ou morte. É um no outro que eles encontram apoio, conforto, amizade e, às
-                    vezes, até mais que amizade... Juntos, eles descobrem o quanto a vida profissional e a pessoal podem
-                    ser complicadas e se misturarem no meio do caminho.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        MAIS INFORMAÇÕES
-                    </button>
+        <section id="series">
+            <div class="destaque-series">
+                <div class="container-series">
+                    <h3 class="titulo">GREY'S ANATOMY</h3>
+                    <h2 class="sub-titulo">Nova Temporada</h2>
+                    <p class="descricao">No meio da pandemia COVID-19, os médicos do Grey Sloan se encontram em um
+                        território desconhecido enquanto trabalham para salvar vidas sem fim à vista. Meredith, que
+                        lidera os trabalhadores da linha de frente, fica cada vez mais frustrada à medida que seus
+                        pacientes continuam morrendo por causa do vírus.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="series">
+        <div class="carrossel-series">
+            <h2>Séries</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/hospital-amsterdam.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/chicago-med.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/sob-pressao.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/transplant.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/residente.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/greys-anatomy.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/house.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/nurses.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/plantao-medico.jpg" alt="" srcset="">
                 </div>
             </div>
         </div>
-    </main>
+
+        <section id="filmes">
+            <div class="destaque-filmes">
+                <div class="container-filmes">
+                    <h3 class="titulo">PATCH ADAMS - O Amor É Contagioso</h3>
+                    <p class="descricao">Patch Adams descobre que o humor e o carinho podem fazer maravilhas e ajudar a
+                        curar pessoas hospitalizadas, mas suas ideias entram em conflito com os defensores da medicina
+                        tradicional.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="carrossel-filmes">
+            <h2>Filmes</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/bem-vindo-a-marly-gomont.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/o-amor-e-contagioso.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/coisas-belas-e-sujas.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/hipocrates3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/o-fisico2.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/maos-talentosas.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/quase-deuses3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/um-homem-entre-gigantes3.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <section id="documentarios">
+            <div class="destaque-documentarios">
+                <div class="container-documentarios">
+                    <h3 class="titulo">LENOX HILL</h3>
+                    <p class="descricao">Uma série documental lançada em junho de 2020 que mostra como quatro médicos
+                        americanos conciliam a rotina profissional e pessoal. Todos trabalham no renomado hospital Lenox
+                        Hill, em Nova York.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="carrossel-documentarios">
+            <h2>Documentários</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/cirurgioes-inovadores2.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/extremis.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/corpo-humano.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/explicando-a-mente.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/lenox-hill.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/operação-enganosa.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="rodape">
+                <p>Desenvolvido por Fabiana Gonçalves<br>&copy; Copyright 2022</p>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/43839536bd.js"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/setup.js"></script>
 
 </body>
 

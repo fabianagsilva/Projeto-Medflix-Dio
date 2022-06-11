@@ -1,66 +1,287 @@
-:root {
-    --verde: #79c3aa;
-    --preta: #141414;
-}
-
+/* CÓDIGO DE RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*elementos base*/
+html,
+body {
+    height: 100%;
+}
+
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*DECLARAÇÃO DE VARIAVÉIS*/
+:root {
+    --verde: #79c3aa;
+    --preta: #141414;
+    --verde-claro: #bdeadb;
+}
+
+/*ELEMENTOS BASE*/
+a {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 28px;
+}
 
 body {
     background: var(--preta);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", Times, serif;
     color: white;
-
 }
 
 header .container {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: var(--preta);
 }
 
-
-header .logo {
+.logo {
     margin-left: 5px;
     color: var(--verde);
     font-family: "Arial Black", Times;
     font-size: 40px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #AAA;
+.fa-solid {
+    color: rgb(195, 195, 195);
+    background-color: var(--preta);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+header nav .fa-solid:hover {
+    color: var(--verde)
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .2gap;
+}
+
+#menu a {
+    background-color: var(--verde);
+    border-color: none;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 5px;
     margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease all;
 }
 
-header nav a:hover {
-    color: #fff;
+#menu a:hover {
+    background-color: white;
+    color: var(--preta);
+    text-decoration: underline;
 }
 
-/*filme principal*/
-.filme-principal {
+/*DESTAQUE SÉRIES*/
+.destaque-series {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-grey-anatomy.jpg');
-
-    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, .20), rgba(0, 0, 0, .50)100%), url('/img/capa-greys-anatomy.jpg');
+    height: 600px;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 8px;
+    background-position: center;
 }
 
-.filme-principal .descricao {
-    margin-bottom: 40px;
+.container-series {
+    margin-right: 62%;
+    margin-top: 25px;
+    position: relative;
+    margin-left: 2%;
 }
 
-.titulo {
+.destaque-series .titulo {
+    margin-top: 15px;
     font-size: 40px;
+    font-family: "trebuchet MS", Arial, sans-serif;
+}
+
+.destaque-series .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+/*CAROUSEL*/
+.carrossel-series {
+    margin-top: 40px;
+}
+
+.carrossel-series .item:hover {
+    transform: rotate(4deg);
+    transition-duration: 0.5s;
+    margin: 10px;
+}
+
+/*DESTAQUE FILMES*/
+.destaque-filmes {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .20), rgba(0, 0, 0, .50)100%), url('/img/capa-patch-adams.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    justify-content: center;
+    background-position: center;
+}
+
+.container-filmes {
+    margin-left: 62%;
+    margin-top: 25px;
+    position: relative;
+}
+
+.destaque-filmes .titulo {
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: "trebuchet MS", Arial, sans-serif;
+}
+
+.destaque-filmes .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+/*CAROUSEL*/
+.carrossel-filmes {
+    margin-top: 40px;
+}
+
+.carrossel-filmes .item:hover {
+    transform: rotate(-4deg);
+    transition-duration: 0.5s;
+    margin: 10px;
+}
+
+/*DESTAQUE DOCUMENTÁRIOS*/
+.destaque-documentarios {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .50)100%), url('/img/capa-documentario.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.container-documentarios {
+    margin-right: 65%;
+    margin-top: 25px;
+    position: relative;
+    margin-left: 2%;
+}
+
+.destaque-documentarios .titulo {
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: "trebuchet MS", Arial, sans-serif;
+}
+
+.destaque-documentarios .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+/*CAROUSEL*/
+.carrossel-documentarios {
+    margin-top: 40px;
+}
+
+.carrossel-documentarios .item:hover {
+    transform: rotate(4deg);
+    transition-duration: 0.5s;
+    margin: 10px;
+}
+
+.sub-titulo {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 0px;
+    color: var(--verde-claro);
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50%);
+    border-color: var(--verde);
+    color: white;
+    border-radius: 10px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.destaques .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*RODAPE*/
+footer .rodape {
+
+    background-color: black;
+    color: var(--verde);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
 }
